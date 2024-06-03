@@ -62,17 +62,17 @@ const openApp = (name, icon) => {
     // Botões 👇🏻
     const cMinBtn = document.createElement("div");
     const minBtn = document.createElement("img");
-    minBtn.setAttribute("src", "../../Assets/minimize.png");
+    minBtn.setAttribute("src", "./Assets/minimize.png");
     cMinBtn.appendChild(minBtn);
 
     const cResBtn = document.createElement("div");
     const resBtn = document.createElement("img");
-    resBtn.setAttribute("src", "../../Assets/maxmin.png");
+    resBtn.setAttribute("src", "./Assets/maxmin.png");
     cResBtn.appendChild(resBtn);
 
     const cCloseBtn = document.createElement("div");
     const closeBtn = document.createElement("img");
-    closeBtn.setAttribute("src", "../../Assets/close.png");
+    closeBtn.setAttribute("src", "./Assets/close.png");
     cCloseBtn.appendChild(closeBtn);
 
     actionBtns.appendChild(cMinBtn);
@@ -169,11 +169,11 @@ const openApp = (name, icon) => {
 };
 
 btnAddStock.addEventListener("click", () => {
-  openApp("Estoque", "../../Assets/IconAdd.png");
+  openApp("Estoque", "./Assets/IconAdd.png");
 });
 
 chrome.addEventListener("click", () => {
-  openApp("Chrome", "../../Assets/chrome.png");
+  openApp("Chrome", "./Assets/chrome.png");
 });
 
 // Minimiza o App
